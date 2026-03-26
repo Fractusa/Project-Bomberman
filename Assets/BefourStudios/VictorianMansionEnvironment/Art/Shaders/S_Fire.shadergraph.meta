@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bd43537328ca9174a99e55d9da72db45
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269740
+  packageName: Victorian Mansion Environment
+  packageVersion: 1.1
+  assetPath: Assets/BefourStudios/VictorianMansionEnvironment/Art/Shaders/S_Fire.shadergraph
+  uploadId: 816138

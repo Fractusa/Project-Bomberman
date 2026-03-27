@@ -465,7 +465,7 @@ MonoBehaviour:
   offlineScene: Assets/Scenes/SampleScene.unity
   onlineScene: Assets/Scenes/SampleScene.unity
   offlineSceneLoadDelay: 0
-  transport: {fileID: 523986298}
+  transport: {fileID: 0}
   networkAddress: localhost
   maxConnections: 100
   disconnectInactiveConnections: 0

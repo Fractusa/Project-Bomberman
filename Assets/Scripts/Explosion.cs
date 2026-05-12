@@ -5,10 +5,10 @@ public class Explosion : MonoBehaviour
     public float destructionDelay = 0.5f;
     void Start()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, destructionDelay);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {

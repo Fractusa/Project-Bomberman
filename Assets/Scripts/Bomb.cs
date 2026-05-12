@@ -22,10 +22,10 @@ public class Bomb : MonoBehaviour
     {
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
-        SpawnExplosionDirection(Vector2.up);
-        SpawnExplosionDirection(Vector2.down);
-        SpawnExplosionDirection(Vector2.left);
-        SpawnExplosionDirection(Vector2.right);
+        SpawnExplosionDirection(Vector3.forward);
+        SpawnExplosionDirection(Vector3.back);
+        SpawnExplosionDirection(Vector3.left);
+        SpawnExplosionDirection(Vector3.right);
 
 
         if (owner != null) owner.activeBombs--;
@@ -34,18 +34,20 @@ public class Bomb : MonoBehaviour
     }
 
 
-    void SpawnExplosionDirection(Vector2 direction)
+    void SpawnExplosionDirection(Vector3 direction)
     {
         for (int i = 1; i <= bombRange; i++)
         {
-            Vector2 spawnPos = (Vector2)transform.position + direction * i;
+            Vector3 spawnPos = transform.position + direction * i;
+            RaycastHit hit;
 
             //Check if a wall or box is hit before creating the explosion
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, i, levelLayerMask);
+            Quaternion rotation = Quaternion.LookRotation(direction) * Quaternion.Euler(90, 0, 0);
 
-            if (!hit)
+            //Makes the SphereCast radius 0.3f, to easier hit targets. 
+            if (!Physics.SphereCast(transform.position, 0.3f, direction, out hit, i, levelLayerMask))
             {
-                Instantiate(explosionPrefab, spawnPos, Quaternion.identity);
+                Instantiate(explosionPrefab, spawnPos, rotation);
             }
             else
             {

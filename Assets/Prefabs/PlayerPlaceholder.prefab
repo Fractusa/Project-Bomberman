@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 393069709397064844}
   - component: {fileID: -3263252502129715294}
   - component: {fileID: -2032481408188422087}
+  - component: {fileID: 2756336882416855755}
   m_Layer: 0
   m_Name: PlayerPlaceholder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +111,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -219,3 +220,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2756336882416855755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4191131916319705400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc99939b408cf2429ab297c08e827ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  bombPrefab: {fileID: 6992891940651609306, guid: 9a81da481ededdd4bab70a2e1f6e7c52, type: 3}
+  explosionRange: 2
+  maxBombs: 1
+  activeBombs: 0
+  moveSpeed: 5

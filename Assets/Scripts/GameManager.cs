@@ -1,28 +1,52 @@
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public float roundEndDelay = 2.0f;
+    public int playersLeftToWin = 1;
+
+    private bool isRoundEnding = false;
+
     public void CheckRemainingPlayers()
     {
-        PlayerHealth[] players = FindObjectsByType<PlayerHealth>();
+        if (isRoundEnding) return;
 
-        int aliveCount = 0;
-        foreach (var player in players)
-        {
-            if (player.lives > 0)
-            {
-                aliveCount++;
-            }
-        }
-
-        if(aliveCount <= 1)
-        {
-            EndRound();
-        }
+        StartCoroutine(DelayedCheckRoutine());
     }
 
-    void EndRound()
+    private IEnumerator DelayedCheckRoutine()
     {
-        Debug.Log("Round has ended");
+        isRoundEnding = true;
+
+        yield return new WaitForSeconds(roundEndDelay);
+
+        PlayerHealth[] activePlayers = FindObjectsByType<PlayerHealth>();
+
+        if (activePlayers.Length == playersLeftToWin)
+        {
+            PlayerStats winnerStats = activePlayers[0].GetComponent<PlayerStats>();
+
+            if (winnerStats != null)
+            {
+                EndRound(winnerStats.myTeam);
+            }
+        }
+        else if (activePlayers.Length == 0)
+        {
+            EndRoundDraw();
+        }
+        else
+        {
+            isRoundEnding = false;
+        }
+    }
+    void EndRound(PlayerTeam winningTeam)
+    {
+        Debug.Log($"Round has ended! {winningTeam} won!");
+    }
+    void EndRoundDraw()
+    {
+        Debug.Log($"Round has ended as a draw! Everyone died!");
     }
 }

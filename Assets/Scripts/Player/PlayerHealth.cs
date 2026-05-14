@@ -45,13 +45,15 @@ public class PlayerHealth : MonoBehaviour
     public void Die()
     {
         Debug.Log("Player died");
+        isInvulnerable = true;
 
-        if(playerStats != null)
+        if (playerStats != null)
         {
             playerStats.enabled = false;
         }
-        var movement = GetComponent<PlayerMovement>
 
         FindAnyObjectByType<GameManager>()?.CheckRemainingPlayers();
+
+        gameObject.SetActive(false);
     }
 }

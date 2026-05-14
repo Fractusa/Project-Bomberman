@@ -1,7 +1,20 @@
 using UnityEngine;
 
+
+public enum PlayerTeam { Red, Green, Blue, Yellow}
+
 public class PlayerStats : MonoBehaviour
 {
+    public PlayerTeam myTeam;
+    public MeshRenderer playerRenderer; //put the players 3d model here, to allow it to be rendered in it's teams color
+
+
+    void Start()
+    {
+        ApplyTeamColor();
+    }
+
+
     public GameObject bombPrefab;
     public int explosionRange = 2;
     public int maxBombs = 1;
@@ -42,6 +55,24 @@ public class PlayerStats : MonoBehaviour
 
             activeBombs++;
             newBomb.GetComponent<Bomb>().Setup(explosionRange, this);
+        }
+    }
+
+    void ApplyTeamColor()
+    {
+        if (playerRenderer == null) return;
+
+        //Change color on the player models material based on their team color
+        switch (myTeam)
+        {
+            case PlayerTeam.Red:
+                playerRenderer.material.color = Color.red; break;
+            case PlayerTeam.Green:
+                playerRenderer.material.color = Color.green; break;
+            case PlayerTeam.Blue:
+                playerRenderer.material.color = Color.blue; break;
+            case PlayerTeam.Yellow:
+                playerRenderer.material.color = Color.yellow; break;
         }
     }
 }

@@ -740,6 +740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ac4319d106cd84c96bd2b26b60d49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  roundEndDelay: 2
+  playersLeftToWin: 1
 --- !u!4 &1236347619
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,12 @@ public class Explosion : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player was hit by the flame");
+            PlayerHealth health = other.GetComponent<PlayerHealth>();
+            if(health != null)
+            {
+                health.TakeDamage();
+            }
+            
         }
     }
 

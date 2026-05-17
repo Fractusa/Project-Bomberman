@@ -341,7 +341,7 @@ MonoBehaviour:
   authenticator: {fileID: 0}
   playerPrefab: {fileID: 4191131916319705400, guid: eedbc84cd21a77240a6496a695be8be2, type: 3}
   autoCreatePlayer: 1
-  playerSpawnMethod: 0
+  playerSpawnMethod: 1
   spawnPrefabs: []
   exceptionsDisconnect: 1
   snapshotSettings:
@@ -362,7 +362,7 @@ MonoBehaviour:
   minPlayers: 1
   roomPlayerPrefab: {fileID: 5248557171792637132, guid: d009179385f89d24f934d9c6c4a4b5ee, type: 3}
   RoomScene: Assets/Scenes/LobbyScene.unity
-  GameplayScene: Assets/Scenes/SampleScene.unity
+  GameplayScene: Assets/Scenes/GameScene4v4.unity
   _allPlayersReady: 0
   clientIndex: 0
 --- !u!4 &1712558367

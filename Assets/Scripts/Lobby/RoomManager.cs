@@ -22,46 +22,6 @@ public class RoomManager : NetworkRoomManager
     // have to cast to this type everywhere.
     public static new RoomManager singleton => (RoomManager)NetworkRoomManager.singleton;
 
-    #region Server Callbacks
-
-    /// <summary>
-    /// This is called on the server when the server is started - including when a host is started.
-    /// </summary>
-    public override void OnRoomStartServer() { }
-
-    /// <summary>
-    /// This is called on the server when the server is stopped - including when a host is stopped.
-    /// </summary>
-    public override void OnRoomStopServer() { }
-
-    /// <summary>
-    /// This is called on the host when a host is started.
-    /// </summary>
-    public override void OnRoomStartHost() { }
-
-    /// <summary>
-    /// This is called on the host when the host is stopped.
-    /// </summary>
-    public override void OnRoomStopHost() { }
-
-    /// <summary>
-    /// This is called on the server when a new client connects to the server.
-    /// </summary>
-    /// <param name="conn">The new connection.</param>
-    public override void OnRoomServerConnect(NetworkConnectionToClient conn) { }
-
-    /// <summary>
-    /// This is called on the server when a client disconnects.
-    /// </summary>
-    /// <param name="conn">The connection that disconnected.</param>
-    public override void OnRoomServerDisconnect(NetworkConnectionToClient conn) { }
-
-    /// <summary>
-    /// This is called on the server when a networked scene finishes loading.
-    /// </summary>
-    /// <param name="sceneName">Name of the new scene.</param>
-    public override void OnRoomServerSceneChanged(string sceneName) { }
-
     /// <summary>
     /// This allows customization of the creation of the room-player object on the server.
     /// <para>By default the roomPlayerPrefab is used to create the room-player, but this function allows that behaviour to be customized.</para>
@@ -82,7 +42,21 @@ public class RoomManager : NetworkRoomManager
     /// <returns>A new GamePlayer object.</returns>
     public override GameObject OnRoomServerCreateGamePlayer(NetworkConnectionToClient conn, GameObject roomPlayer)
     {
-        return base.OnRoomServerCreateGamePlayer(conn, roomPlayer);
+        Transform startPos = GetStartPosition();
+
+        GameObject gamePlayer = startPos != null
+            ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
+            : Instantiate(playerPrefab);
+
+        RoomPlayer room = roomPlayer.GetComponent<RoomPlayer>();
+        PlayerColor player = gamePlayer.GetComponent<PlayerColor>();
+
+        if (room != null && player != null)
+        {
+            player.colorChoice = room.colorChoice;
+        }
+
+        return gamePlayer;
     }
 
     /// <summary>
@@ -125,53 +99,6 @@ public class RoomManager : NetworkRoomManager
     {
         base.OnRoomServerPlayersReady();
     }
-
-    /// <summary>
-    /// This is called on the server when CheckReadyToBegin finds that players are not ready
-    /// <para>May be called multiple times while not ready players are joining</para>
-    /// </summary>
-    public override void OnRoomServerPlayersNotReady() { }
-
-    #endregion
-
-    #region Client Callbacks
-
-    /// <summary>
-    /// This is a hook to allow custom behaviour when the game client enters the room.
-    /// </summary>
-    public override void OnRoomClientEnter() { }
-
-    /// <summary>
-    /// This is a hook to allow custom behaviour when the game client exits the room.
-    /// </summary>
-    public override void OnRoomClientExit() { }
-
-    /// <summary>
-    /// This is called on the client when it connects to server.
-    /// </summary>
-    public override void OnRoomClientConnect() { }
-
-    /// <summary>
-    /// This is called on the client when disconnected from a server.
-    /// </summary>
-    public override void OnRoomClientDisconnect() { }
-
-    /// <summary>
-    /// This is called on the client when a client is started.
-    /// </summary>
-    public override void OnRoomStartClient() { }
-
-    /// <summary>
-    /// This is called on the client when the client stops.
-    /// </summary>
-    public override void OnRoomStopClient() { }
-
-    /// <summary>
-    /// This is called on the client when the client is finished loading a new networked scene.
-    /// </summary>
-    public override void OnRoomClientSceneChanged() { }
-
-    #endregion
 
     #region Optional UI
 

@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (04)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -232,6 +236,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -295,6 +303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -356,6 +368,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -419,6 +435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -440,6 +460,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -481,6 +505,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -502,6 +542,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -542,6 +586,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -634,6 +694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2799988
@@ -674,6 +738,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -693,7 +773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157368227}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,6 +858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -840,6 +924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -859,7 +947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 184597734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194776585}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,6 +1029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.92
@@ -980,6 +1072,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1043,6 +1151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1064,6 +1176,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1105,6 +1221,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1126,6 +1258,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1166,6 +1302,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1233,6 +1385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22
@@ -1273,6 +1429,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1294,6 +1466,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1335,6 +1511,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1356,6 +1548,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1397,6 +1593,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1418,6 +1630,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1459,6 +1675,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1480,6 +1712,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1521,6 +1757,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1542,6 +1794,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1582,6 +1838,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1645,6 +1917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1707,6 +1983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1728,6 +2008,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1768,6 +2052,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1831,6 +2131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1893,6 +2197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1914,6 +2222,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1955,6 +2267,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1976,6 +2304,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2016,6 +2348,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2079,6 +2427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2100,6 +2452,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2141,6 +2497,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2162,6 +2534,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2203,6 +2579,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2224,6 +2616,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2265,6 +2661,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2284,7 +2696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 530370874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2369,6 +2781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2388,7 +2804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 549517366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Destroyables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,6 +2855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0299997
@@ -2478,6 +2898,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2541,6 +2977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2562,6 +3002,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2603,6 +3047,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2624,6 +3084,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2664,6 +3128,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2727,6 +3207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (03)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2789,6 +3273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2810,6 +3298,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2851,6 +3343,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2870,7 +3378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 653884621}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2950,6 +3458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3012,6 +3524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3033,6 +3549,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3074,6 +3594,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3095,6 +3631,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3135,6 +3675,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3198,6 +3754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3219,6 +3779,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3260,6 +3824,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3281,6 +3861,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3321,6 +3905,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3428,6 +4028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3447,7 +4051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785422168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Destroyables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3536,6 +4140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3597,6 +4205,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3660,6 +4272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3722,6 +4338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3743,6 +4363,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3783,6 +4407,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3846,6 +4486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3867,6 +4511,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3907,6 +4555,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3970,6 +4634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (06)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4032,6 +4700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4053,6 +4725,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4094,6 +4770,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4115,6 +4807,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4156,9 +4852,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977564, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4226,6 +4938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.0299997
@@ -4266,6 +4982,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4287,6 +5019,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4328,6 +5064,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4349,6 +5101,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4390,6 +5146,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4411,6 +5183,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4452,6 +5228,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4473,6 +5265,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4513,6 +5309,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4576,6 +5388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4595,7 +5411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1060247650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4685,6 +5501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (04)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4746,6 +5566,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4809,6 +5633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4828,7 +5656,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1106951770}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4865,7 +5693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125583986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4910,6 +5738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.92
@@ -4950,6 +5782,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4971,6 +5819,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5012,6 +5864,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5033,6 +5901,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5074,6 +5946,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5095,6 +5983,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5135,6 +6027,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5198,6 +6106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5219,6 +6131,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5260,6 +6176,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5281,6 +6213,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5321,6 +6257,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5384,6 +6336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5445,6 +6401,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5508,6 +6468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5570,6 +6534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (05)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5591,6 +6559,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5631,6 +6603,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5694,6 +6682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5715,6 +6707,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5755,6 +6751,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5818,6 +6830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5880,6 +6896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5901,6 +6921,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5941,6 +6965,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6004,6 +7044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6065,6 +7109,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6128,6 +7176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (07)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6149,6 +7201,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6190,6 +7246,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6211,6 +7283,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6252,6 +7328,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6273,6 +7365,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6313,6 +7409,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6380,6 +7492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.39
@@ -6420,6 +7536,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6441,6 +7573,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6482,6 +7618,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6503,6 +7655,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6544,6 +7700,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6565,6 +7737,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6605,6 +7781,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6765,6 +7957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.36
@@ -6805,6 +8001,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6824,7 +8036,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500558128}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Destroyables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6874,6 +8086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2799988
@@ -6913,6 +8129,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6976,6 +8208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7038,6 +8274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7059,6 +8299,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7100,6 +8344,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7121,6 +8381,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7162,9 +8426,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977564, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7187,6 +8467,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7228,6 +8512,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7249,6 +8549,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7290,6 +8594,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7311,6 +8631,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7351,6 +8675,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7501,6 +8841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2799997
@@ -7541,6 +8885,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7562,6 +8922,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7603,6 +8967,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7622,7 +9002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1687371103}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7702,6 +9082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7763,6 +9147,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7826,6 +9214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7888,6 +9280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7907,7 +9303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776086017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Destroyables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7956,6 +9352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2799988
@@ -7995,6 +9395,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8058,6 +9474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8079,6 +9499,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8119,6 +9543,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8182,6 +9622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8243,6 +9687,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8306,6 +9754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (05)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8367,6 +9819,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8430,6 +9886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8451,6 +9911,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8492,6 +9956,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8513,6 +9993,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8553,6 +10037,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8616,6 +10116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (03)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8677,6 +10181,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8740,6 +10248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8801,6 +10313,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8864,6 +10380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8885,6 +10405,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8926,9 +10450,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977564, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8951,6 +10491,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8992,6 +10536,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9013,6 +10573,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9054,6 +10618,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9075,6 +10655,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9116,6 +10700,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9137,6 +10737,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9177,6 +10781,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9313,6 +10933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FenceSmall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.68
@@ -9353,6 +10977,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9374,6 +11014,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9415,6 +11059,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9436,6 +11096,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9477,6 +11141,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9498,6 +11178,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9538,6 +11222,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9601,6 +11301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (08)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9622,6 +11326,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9663,9 +11371,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1030977564, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9688,6 +11412,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9728,6 +11456,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9791,6 +11535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroyable Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9812,6 +11560,10 @@ PrefabInstance:
     - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_Name
       value: SM_FenceSmall (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977559, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9852,6 +11604,22 @@ PrefabInstance:
     - target: {fileID: 1030977560, guid: abc00000000011004446373622834881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977563, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977567, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977571, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030977575, guid: abc00000000011004446373622834881, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9914,6 +11682,10 @@ PrefabInstance:
     - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
       propertyPath: m_Name
       value: Destroyable Box (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045914187481768892, guid: d5c504f30e650664eafe3dfc847414a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

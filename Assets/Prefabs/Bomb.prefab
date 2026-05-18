@@ -129,4 +129,4 @@ MonoBehaviour:
   explosionPrefab: {fileID: 2938591884131798906, guid: c3c8119331ac989468cbacb986b9dfa5, type: 3}
   levelLayerMask:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 200

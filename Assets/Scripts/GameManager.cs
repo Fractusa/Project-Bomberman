@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     void EndRoundDraw()
     {
         Debug.Log($"Round has ended as a draw! Everyone died!");
+        StartCoroutine(RestartSceneRoutine());
     }
 
 
@@ -68,16 +69,16 @@ public class GameManager : MonoBehaviour
                 currentWinnerSCore = scoreRed;
                 break;
             case PlayerTeam.Blue:
-                scoreRed++;
-                currentWinnerSCore = scoreRed;
+                scoreBlue++;
+                currentWinnerSCore = scoreBlue;
                 break;
             case PlayerTeam.Green:
-                scoreRed++;
-                currentWinnerSCore = scoreRed;
+                scoreGreen++;
+                currentWinnerSCore = scoreGreen;
                 break;
             case PlayerTeam.Yellow:
-                scoreRed++;
-                currentWinnerSCore = scoreRed;
+                scoreYellow++;
+                currentWinnerSCore = scoreYellow;
                 break;
 
         }

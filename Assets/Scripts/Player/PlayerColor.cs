@@ -26,6 +26,7 @@ public class PlayerColor : NetworkBehaviour
 
         if (targetRenderer != null)
             targetRenderer.material.color = PlayerColorUtility.ToColor(choice);
+
     }
 
 }

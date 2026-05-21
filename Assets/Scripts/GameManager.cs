@@ -112,23 +112,9 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Restarting the round in {restartSceneDelay}");
         yield return new WaitForSeconds(restartSceneDelay);
 
-
-        isRoundEnding = false;
-
-        if(NetworkManager.singleton is NetworkManager roomManager)
-        {
-            Debug.Log($"Mirror reload");
-
-            string currentSceneName = SceneManager.GetActiveScene().name;
-
-            roomManager.ServerChangeScene(currentSceneName);
-        }
-        else
-        {
-            Debug.Log($"Non-Mirror reload");
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
-        }
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
+        
 
     }
 

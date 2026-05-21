@@ -1,3 +1,4 @@
+using Mirror;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
     public static int scoreBlue = 0;
     public static int scoreGreen = 0;
     public static int scoreYellow = 0;
+    public static int scoreOrange = 0;
+    public static int scorePurple = 0;
 
 
     public void CheckRemainingPlayers()
@@ -80,6 +83,14 @@ public class GameManager : MonoBehaviour
                 scoreYellow++;
                 currentWinnerSCore = scoreYellow;
                 break;
+            case PlayerTeam.Orange:
+                scoreOrange++;
+                currentWinnerSCore = scoreOrange;
+                break;
+            case PlayerTeam.Purple:
+                scorePurple++;
+                currentWinnerSCore = scorePurple;
+                break;
 
         }
         Debug.Log($"Round has ended! {winningTeam} won! Their score is {currentWinnerSCore}");
@@ -101,8 +112,24 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Restarting the round in {restartSceneDelay}");
         yield return new WaitForSeconds(restartSceneDelay);
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+
+        isRoundEnding = false;
+
+        if(NetworkManager.singleton is NetworkManager roomManager)
+        {
+            Debug.Log($"Mirror reload");
+
+            string currentSceneName = SceneManager.GetActiveScene().name;
+
+            roomManager.ServerChangeScene(currentSceneName);
+        }
+        else
+        {
+            Debug.Log($"Non-Mirror reload");
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
+
     }
 
     void EndMatch(PlayerTeam matchWinner)
@@ -112,7 +139,7 @@ public class GameManager : MonoBehaviour
         ResetAllScores();
 
         //Load lobby scene
-        //SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("LobbyScene");
     }
 
 
@@ -122,6 +149,8 @@ public class GameManager : MonoBehaviour
         scoreBlue = 0;
         scoreGreen = 0;
         scoreYellow = 0;
+        scoreOrange = 0;
+        scorePurple = 0;
     }
 
 

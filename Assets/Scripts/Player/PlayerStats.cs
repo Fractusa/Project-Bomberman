@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-public enum PlayerTeam { Red, Green, Blue, Yellow}
+public enum PlayerTeam { Red, Green, Blue, Yellow, Purple, Orange}
 
 public class PlayerStats : MonoBehaviour
 {
@@ -69,6 +69,10 @@ public class PlayerStats : MonoBehaviour
                 myTeam = PlayerTeam.Blue; break;
             case PlayerColorChoice.Yellow:
                 myTeam = PlayerTeam.Yellow; break;
+            case PlayerColorChoice.Purple:
+                myTeam = PlayerTeam.Purple; break;
+            case PlayerColorChoice.Orange:
+                myTeam = PlayerTeam.Orange; break;
         }
     }
 }

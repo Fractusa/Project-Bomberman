@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1319010395776459675}
   - component: {fileID: 8580290622672486862}
   - component: {fileID: 588051604343232052}
+  - component: {fileID: -2121689892637531885}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -105,6 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2433726f94227724391c556c6c6eed86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Explosion
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   destructionDelay: 0.5
 --- !u!65 &588051604343232052
 BoxCollider:
@@ -127,3 +131,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.76, y: 1.8300005, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2121689892637531885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2938591884131798906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
+  sceneId: 0
+  _assetId: 1194283729
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0

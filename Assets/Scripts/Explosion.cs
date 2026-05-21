@@ -1,11 +1,24 @@
 using UnityEngine;
+using Mirror;
+using System.Collections;
 
-public class Explosion : MonoBehaviour
+public class Explosion : NetworkBehaviour
 {
     public float destructionDelay = 0.5f;
-    void Start()
+    
+    public override void OnStartServer()
     {
-        Destroy(gameObject, destructionDelay);
+        base.OnStartServer();
+
+        StartCoroutine(DestroyAfterDelay());
+    }
+
+    [Server]
+    private IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(destructionDelay);
+
+        NetworkServer.Destroy(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)

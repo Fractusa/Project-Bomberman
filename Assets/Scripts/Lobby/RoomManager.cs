@@ -1,5 +1,6 @@
 using UnityEngine;
 using Mirror;
+using System.Collections;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-room-manager
@@ -21,6 +22,78 @@ public class RoomManager : NetworkRoomManager
     // Overrides the base singleton so we don't
     // have to cast to this type everywhere.
     public static new RoomManager singleton => (RoomManager)NetworkRoomManager.singleton;
+
+    private bool isRestartingRound;
+
+    [Server]
+    public void RestartGameplayScene()
+    {
+        if (isRestartingRound)
+            return;
+
+        isRestartingRound = true;
+        StartCoroutine(RestartGameplaySceneRoutine());
+    }
+
+    [Server]
+    private IEnumerator RestartGameplaySceneRoutine()
+    {
+        // Destroy current game players.
+        foreach (NetworkConnectionToClient conn in NetworkServer.connections.Values)
+        {
+            if (conn.identity != null)
+            {
+                NetworkServer.Destroy(conn.identity.gameObject);
+            }
+        }
+
+        yield return null;
+
+        // Reload the gameplay scene for everyone.
+        ServerChangeScene(GameplayScene);
+    }
+
+    public override void OnServerSceneChanged(string sceneName)
+    {
+        base.OnServerSceneChanged(sceneName);
+
+        if (sceneName != GameplayScene)
+            return;
+
+        if (!isRestartingRound)
+            return;
+
+        isRestartingRound = false;
+
+        // Recreate game players from existing room players.
+        foreach (NetworkRoomPlayer rp in roomSlots)
+        {
+            if (rp == null)
+                continue;
+
+            NetworkConnectionToClient conn = rp.connectionToClient;
+
+            if (conn == null)
+                continue;
+
+            Transform startPos = GetStartPosition();
+
+            GameObject gamePlayer = startPos != null
+                ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
+                : Instantiate(playerPrefab);
+
+            // Copy room data onto the new game player.
+            RoomPlayer roomPlayer = rp.GetComponent<RoomPlayer>();
+            PlayerColor playerColor = gamePlayer.GetComponent<PlayerColor>();
+
+            if (playerColor != null && playerColor != null)
+            {
+                playerColor.colorChoice = roomPlayer.colorChoice;
+            }
+
+            NetworkServer.ReplacePlayerForConnection(conn, gamePlayer, true);
+        }
+    }
 
     /// <summary>
     /// This allows customization of the creation of the room-player object on the server.

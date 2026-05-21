@@ -20,7 +20,8 @@ public class Bomb : MonoBehaviour
 
     void Explode()
     {
-        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+        Instantiate(explosionPrefab, transform.position, Quaternion.Euler(90, 0, 0));
 
         SpawnExplosionDirection(Vector3.forward);
         SpawnExplosionDirection(Vector3.back);

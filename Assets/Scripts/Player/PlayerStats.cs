@@ -44,17 +44,14 @@ public class PlayerStats : MonoBehaviour
     {
         if(activeBombs < maxBombs)
         {
-            Vector3 spawnPos = new Vector3(
-                Mathf.Round(transform.position.x),
-                -0.5f,
-                Mathf.Round(transform.position.z)
-            );
-        
+            Vector3 spawnPos = new Vector3(transform.position.x, -0.5f, transform.position.z);
 
-            GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
+           
+                GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
 
-            activeBombs++;
-            newBomb.GetComponent<Bomb>().Setup(explosionRange, this);
+                activeBombs++;
+                newBomb.GetComponent<Bomb>().Setup(explosionRange, this);
+
         }
     }
 

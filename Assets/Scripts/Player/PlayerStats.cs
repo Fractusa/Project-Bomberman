@@ -38,7 +38,7 @@ public class PlayerStats : NetworkBehaviour
 
     void Update()
     {
-        if (isLocalPlayer) return;
+        if (!isLocalPlayer) return;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

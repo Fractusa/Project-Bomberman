@@ -62,7 +62,12 @@ public class GameManager : NetworkBehaviour
     void EndRoundDraw()
     {
         Debug.Log($"Round has ended as a draw! Everyone died!");
-        StartCoroutine(RestartSceneRoutine());
+        if (scoreBlue == 3) EndMatch(PlayerTeam.Blue); // Temporary testing, when testing is done remove everything but StartCoroutine(RestartSceneRoutine()); from this method.
+        else
+        {
+            StartCoroutine(RestartSceneRoutine());
+        }
+
     }
 
 
@@ -70,22 +75,22 @@ public class GameManager : NetworkBehaviour
 
     void EndRound(PlayerTeam winningTeam)
     {
-        int currentWinnerSCore = 0;
+        int currentWinnerScore = 0;
 
         switch (winningTeam)
         {
-            case PlayerTeam.Red: scoreRed++; currentWinnerSCore = scoreRed; break;
-            case PlayerTeam.Blue: scoreBlue++; currentWinnerSCore = scoreBlue; break;
-            case PlayerTeam.Green: scoreGreen++; currentWinnerSCore = scoreGreen; break;
-            case PlayerTeam.Yellow: scoreYellow++; currentWinnerSCore = scoreYellow; break;
-            case PlayerTeam.Orange: scoreOrange++; currentWinnerSCore = scoreOrange; break;
-            case PlayerTeam.Purple: scorePurple++; currentWinnerSCore = scorePurple; break;
+            case PlayerTeam.Red: scoreRed++; currentWinnerScore = scoreRed; break;
+            case PlayerTeam.Blue: scoreBlue++; currentWinnerScore = scoreBlue; break;
+            case PlayerTeam.Green: scoreGreen++; currentWinnerScore = scoreGreen; break;
+            case PlayerTeam.Yellow: scoreYellow++; currentWinnerScore = scoreYellow; break;
+            case PlayerTeam.Orange: scoreOrange++; currentWinnerScore = scoreOrange; break;
+            case PlayerTeam.Purple: scorePurple++; currentWinnerScore = scorePurple; break;
 
         }
-        Debug.Log($"Round has ended! {winningTeam} won! Their score is {currentWinnerSCore}");
+        Debug.Log($"Round has ended! {winningTeam} won! Their score is {currentWinnerScore}");
 
 
-        if(currentWinnerSCore >= 3)
+        if(currentWinnerScore >= 3)
         {
             EndMatch(winningTeam);
         }

@@ -103,7 +103,7 @@ public class PlayerHealth : NetworkBehaviour
         {
             playerStats.activeBombs = 0;
             playerStats.maxBombs = 1;
-            playerStats.explosionRange = 2;
+            playerStats.bombRange = 2;
         }
     }
 }

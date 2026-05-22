@@ -13,11 +13,13 @@ public class PlayerBombPlacer : NetworkBehaviour
     [Header("Bomb settings")]
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private KeyCode placeBombKey = KeyCode.Space;
-    [SerializeField] private int maxBombs = 1;
-    [SerializeField] private int bombRange = 3;
 
-    //Syncs the active bombs between the server and clients
-    [SyncVar] private int activeBombs;
+    private PlayerStats stats;
+
+    private void Awake()
+    {
+        stats = GetComponent<PlayerStats>();
+    }
 
     private void Update()
     {
@@ -33,27 +35,27 @@ public class PlayerBombPlacer : NetworkBehaviour
     //Method for clients to call to attempt to place a bomb in game
     [Command]
     private void CmdPlaceBomb()
-    {
-        if(activeBombs >= maxBombs)
-            return;
-        
-        Vector3 spawnPos = GetBombSpawnPosition();
-
-        if(!CanPlaceBombAt(spawnPos))
-            return;
-
-        GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
-
-        Bomb bomb = newBomb.GetComponent<Bomb>();
-
-        if(bomb != null)
+    {   
+        if(stats.activeBombs < stats.maxBombs)
         {
-            bomb.Setup(bombRange, this);
+            Vector3 spawnPos = GetBombSpawnPosition();
+
+            if(!CanPlaceBombAt(spawnPos))
+                return;
+
+            GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
+
+            Bomb bomb = newBomb.GetComponent<Bomb>();
+
+            if(bomb != null)
+            {
+                bomb.Setup(stats.bombRange, this);
+            }
+
+            stats.RegisterBombPlaced();
+
+            NetworkServer.Spawn(newBomb);
         }
-
-        activeBombs++;
-
-        NetworkServer.Spawn(newBomb);
     }
 
     //Server method for getting bomb spawn position
@@ -88,6 +90,6 @@ public class PlayerBombPlacer : NetworkBehaviour
     [Server]
     public void OnBombExploded()
     {
-        activeBombs = Mathf.Max(0, activeBombs - 1);
+        stats.RegisterBombRemoved();
     }
 }

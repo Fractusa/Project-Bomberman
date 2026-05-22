@@ -1,62 +1,55 @@
+using Mirror;
 using UnityEngine;
-
 
 public enum PlayerTeam { Red, Green, Blue, Yellow}
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : NetworkBehaviour
 {
     public PlayerTeam myTeam;
     public MeshRenderer playerRenderer; //put the players 3d model here, to allow it to be rendered in it's teams color
-
 
     void Start()
     {
         ApplyTeamColor();
     }
 
+    [SyncVar] public int bombRange = 2;
+    [SyncVar] public int maxBombs = 1;
+    [SyncVar] public int activeBombs = 0;
+    [SyncVar] public float moveSpeed = 5f;
+    [SyncVar] public int playerLives = 3;
 
-    public GameObject bombPrefab;
-    public int explosionRange = 2;
-    public int maxBombs = 1;
-    public int activeBombs = 0;
-
-    public float moveSpeed = 5f;
+    [Server]
     public void AddPowerup(PowerupEffect effect)
     {
-        explosionRange += effect.extraRange;
+        bombRange += effect.extraRange;
         maxBombs += effect.maxBombs;
         moveSpeed += effect.moveSpeed;
-
-        Debug.Log($"Powerup picked up! stats: Range: {explosionRange}, Max bombs: {maxBombs}, Movement speed: {moveSpeed}");
+        
+        Debug.Log($"Powerup picked up! stats: Range: {bombRange}, Max bombs: {maxBombs}, Movement speed: {moveSpeed}");
+    }
+    
+    [Server]
+    public void RegisterBombPlaced()
+    {
+        activeBombs++;
     }
 
+    [Server]
+    public void RegisterBombRemoved()
+    {
+        activeBombs = Mathf.Max(0, activeBombs -1);
+    }
 
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //     {
-    //         TryPlaceBomb();
-    //     }
-    // }
-
-
-    // void TryPlaceBomb()
-    // {
-    //     if(activeBombs < maxBombs)
-    //     {
-    //         Vector3 spawnPos = new Vector3(
-    //             Mathf.Round(transform.position.x),
-    //             -0.5f,
-    //             Mathf.Round(transform.position.z)
-    //         );
-        
-
-    //         GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
-
-    //         activeBombs++;
-    //         newBomb.GetComponent<Bomb>().Setup(explosionRange, this);
-    //     }
-    // }
+    [Server]
+    public void ResetRoundStats()
+    {
+        bombRange = 2;
+        maxBombs = 1;
+        activeBombs = 0;
+        moveSpeed = 5f;
+        playerLives = 3;
+    }
 
     void ApplyTeamColor()
     {

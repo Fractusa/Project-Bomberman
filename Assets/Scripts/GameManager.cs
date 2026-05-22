@@ -1,9 +1,11 @@
 using Mirror;
+using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : NetworkBehaviour
 {
     public float roundEndDelay = 2.0f;
     public float restartSceneDelay = 5.0f;
@@ -11,39 +13,43 @@ public class GameManager : MonoBehaviour
     public int playersLeftToWin = 1;
     private bool isRoundEnding = false;
 
-    public static int scoreRed = 0;
-    public static int scoreBlue = 0;
-    public static int scoreGreen = 0;
-    public static int scoreYellow = 0;
-    public static int scoreOrange = 0;
-    public static int scorePurple = 0;
+    [SyncVar] public int scoreRed = 0;
+    [SyncVar] public int scoreBlue = 0;
+    [SyncVar] public int scoreGreen = 0;
+    [SyncVar] public int scoreYellow = 0;
+    [SyncVar] public int scoreOrange = 0;
+    [SyncVar] public int scorePurple = 0;
 
 
+    [Server]
     public void CheckRemainingPlayers()
     {
         if (isRoundEnding) return;
-
         StartCoroutine(DelayedCheckRoutine());
     }
 
     private IEnumerator DelayedCheckRoutine()
     {
         isRoundEnding = true;
-
         yield return new WaitForSeconds(roundEndDelay);
 
-        PlayerHealth[] activePlayers = FindObjectsByType<PlayerHealth>();
-
-        if (activePlayers.Length == playersLeftToWin)
+        //Find all alive players based on them still having lives left.
+        List<PlayerHealth> alivePlayers = new List<PlayerHealth>();
+        foreach (PlayerHealth p in FindObjectsByType<PlayerHealth>())
         {
-            PlayerStats winnerStats = activePlayers[0].GetComponent<PlayerStats>();
+            if (p.lives > 0) alivePlayers.Add(p);
+        }
 
-            if (winnerStats != null)
+        if(alivePlayers.Count == playersLeftToWin)
+        {
+            //Find the team of the last player alive.
+            PlayerStats winnerStats = alivePlayers[0].GetComponent<PlayerStats>();
+            if(winnerStats != null)
             {
                 EndRound(winnerStats.myTeam);
             }
         }
-        else if (activePlayers.Length == 0)
+        else if(alivePlayers.Count == 0)
         {
             EndRoundDraw();
         }
@@ -52,6 +58,7 @@ public class GameManager : MonoBehaviour
             isRoundEnding = false;
         }
     }
+
     void EndRoundDraw()
     {
         Debug.Log($"Round has ended as a draw! Everyone died!");
@@ -67,30 +74,12 @@ public class GameManager : MonoBehaviour
 
         switch (winningTeam)
         {
-            case PlayerTeam.Red:
-                scoreRed++;
-                currentWinnerSCore = scoreRed;
-                break;
-            case PlayerTeam.Blue:
-                scoreBlue++;
-                currentWinnerSCore = scoreBlue;
-                break;
-            case PlayerTeam.Green:
-                scoreGreen++;
-                currentWinnerSCore = scoreGreen;
-                break;
-            case PlayerTeam.Yellow:
-                scoreYellow++;
-                currentWinnerSCore = scoreYellow;
-                break;
-            case PlayerTeam.Orange:
-                scoreOrange++;
-                currentWinnerSCore = scoreOrange;
-                break;
-            case PlayerTeam.Purple:
-                scorePurple++;
-                currentWinnerSCore = scorePurple;
-                break;
+            case PlayerTeam.Red: scoreRed++; currentWinnerSCore = scoreRed; break;
+            case PlayerTeam.Blue: scoreBlue++; currentWinnerSCore = scoreBlue; break;
+            case PlayerTeam.Green: scoreGreen++; currentWinnerSCore = scoreGreen; break;
+            case PlayerTeam.Yellow: scoreYellow++; currentWinnerSCore = scoreYellow; break;
+            case PlayerTeam.Orange: scoreOrange++; currentWinnerSCore = scoreOrange; break;
+            case PlayerTeam.Purple: scorePurple++; currentWinnerSCore = scorePurple; break;
 
         }
         Debug.Log($"Round has ended! {winningTeam} won! Their score is {currentWinnerSCore}");
@@ -112,10 +101,30 @@ public class GameManager : MonoBehaviour
         Debug.Log($"Restarting the round in {restartSceneDelay}");
         yield return new WaitForSeconds(restartSceneDelay);
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
-        
 
+        //Once round ends remove all bombs, explosions and powerups
+        foreach (GameObject bomb in GameObject.FindGameObjectsWithTag("Bomb")) Destroy(bomb);
+        foreach (GameObject explosion in GameObject.FindGameObjectsWithTag("Explosion")) Destroy(explosion);
+        foreach (GameObject powerup in GameObject.FindGameObjectsWithTag("Powerup")) Destroy(powerup);
+
+        //Find all boxes and set them active
+        DestroyableBox[] allboxes = FindObjectsByType<DestroyableBox>(FindObjectsInactive.Include);
+        foreach(DestroyableBox box in allboxes)
+        {
+            box.ResetBox();
+        }
+
+        //Find all players and reset them and place them in the spawn locations
+        NetworkStartPosition[] spawns = FindObjectsByType<NetworkStartPosition>();
+        PlayerHealth[] allPlayers = FindObjectsByType<PlayerHealth>();
+
+        for (int i = 0; i < allPlayers.Length; i++)
+        {
+            Vector3 spawnPos = (i < spawns.Length) ? spawns[i].transform.position : Vector3.zero;
+            allPlayers[i].ResetPlayer(spawnPos);
+        }
+
+        isRoundEnding = false;
     }
 
     void EndMatch(PlayerTeam matchWinner)
@@ -125,7 +134,10 @@ public class GameManager : MonoBehaviour
         ResetAllScores();
 
         //Load lobby scene
-        SceneManager.LoadScene("LobbyScene");
+        if(NetworkManager.singleton is NetworkRoomManager roomManager)
+        {
+            roomManager.ServerChangeScene(roomManager.RoomScene);
+        }
     }
 
 

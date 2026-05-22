@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using Mirror;
 public class Bomb : MonoBehaviour
 {
     private int bombRange;
@@ -55,7 +55,10 @@ public class Bomb : MonoBehaviour
                 //If a box is his explode the box
                 if (hit.collider.CompareTag("Box"))
                 {
-                    hit.collider.GetComponent<DestroyableBox>()?.Explode();
+                    if (NetworkServer.active)
+                    {
+                        hit.collider.GetComponent<DestroyableBox>()?.Explode();
+                    }
                 }
                 //Stop the explosion from continuing through the box
                 break;

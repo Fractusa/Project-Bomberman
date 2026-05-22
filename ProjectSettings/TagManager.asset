@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bullet
   - Box
+  - Explosion
+  - Powerup
+  - Bomb
   layers:
   - Default
   - TransparentFX

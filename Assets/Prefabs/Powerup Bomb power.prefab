@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7287223711957693126}
   - component: {fileID: 4353104330849694151}
   - component: {fileID: 5771221084595583673}
+  - component: {fileID: -4140922489456668224}
   m_Layer: 0
   m_Name: Powerup Bomb power
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,3 +127,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   effectData: {fileID: 11400000, guid: 8213d3a4fab2fa0409e4e0a60649a924, type: 2}
+--- !u!114 &-4140922489456668224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527529143397485542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
+  sceneId: 0
+  _assetId: 139410044
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0

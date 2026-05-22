@@ -1,4 +1,5 @@
 using UnityEngine;
+using Mirror;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!NetworkServer.active) return;
+
         // Check if it is a player who collided with the prefab
         if (other.CompareTag("Player"))
         {
@@ -18,7 +21,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 stats.AddPowerup(effectData);
 
                 //Delete powerup prefab
-                Destroy(gameObject);
+                NetworkServer.Destroy(gameObject);
             }
         }
     }

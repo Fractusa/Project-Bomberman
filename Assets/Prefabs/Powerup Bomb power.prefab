@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7287223711957693126}
   - component: {fileID: 4353104330849694151}
   - component: {fileID: 5771221084595583673}
-  - component: {fileID: 7185549066420452187}
+  - component: {fileID: -4140922489456668224}
   m_Layer: 0
   m_Name: Powerup Bomb power
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,11 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f428e6df9a632414e9a58c93a4a3b923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
   effectData: {fileID: 11400000, guid: 8213d3a4fab2fa0409e4e0a60649a924, type: 2}
---- !u!114 &7185549066420452187
+--- !u!114 &-4140922489456668224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

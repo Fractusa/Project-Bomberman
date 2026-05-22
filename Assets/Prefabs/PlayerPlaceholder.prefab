@@ -244,6 +244,9 @@ MonoBehaviour:
   maxBombs: 1
   activeBombs: 0
   moveSpeed: 5
+  levelLayerMask:
+    serializedVersion: 2
+    m_Bits: 192
 --- !u!54 &-923928589851490139
 Rigidbody:
   m_ObjectHideFlags: 0

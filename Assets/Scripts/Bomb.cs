@@ -34,7 +34,8 @@ public class Bomb : NetworkBehaviour
     [Server]
     void Explode()
     {
-        GameObject explosionObject = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+        GameObject explosionObject = Instantiate(explosionPrefab, transform.position, Quaternion.Euler(90, 0, 0));
         NetworkServer.Spawn(explosionObject);
 
         SpawnExplosionDirection(Vector3.forward);

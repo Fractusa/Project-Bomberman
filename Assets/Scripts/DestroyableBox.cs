@@ -1,5 +1,5 @@
-using UnityEngine;
 using Mirror;
+using UnityEngine;
 
 public class DestroyableBox : NetworkBehaviour
 {
@@ -15,11 +15,28 @@ public class DestroyableBox : NetworkBehaviour
         {
             //Randomly decide which powerup to drop
             int randomIndex = Random.Range(0, powerupPrefabs.Length);
-            GameObject powerupObject = Instantiate(powerupPrefabs[randomIndex], transform.position, Quaternion.identity);
 
-            NetworkServer.Spawn(powerupObject);
+            GameObject powerup = Instantiate(powerupPrefabs[randomIndex], transform.position, Quaternion.identity);
+
+            NetworkServer.Spawn(powerup);
         }
 
-        NetworkServer.Destroy(gameObject);//Destroy box
+        RpcSetBoxActive(false);//disable box 
+    }
+
+    //Method to reenable boxes when the round restarts.
+    [Server]
+    public void ResetBox()
+    {
+        RpcSetBoxActive(true);
+    }
+
+    [ClientRpc]
+    void RpcSetBoxActive(bool state)
+    {
+        //Turn on or off collider and graphic based on input
+        if(GetComponent<Collider>()) GetComponent<Collider>().enabled = state;
+        if (transform.childCount > 0) transform.GetChild(0).gameObject.SetActive(state);
+        else if (GetComponent<Renderer>()) GetComponent<Renderer>().enabled = state;
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5269717115826503899}
   - component: {fileID: 8864489054041926712}
   - component: {fileID: 6537260529180406788}
-  - component: {fileID: 5132640303990751288}
+  - component: {fileID: -3677907828239484016}
   m_Layer: 6
   m_Name: Destroyable Box
   m_TagString: Box
@@ -132,7 +132,7 @@ MonoBehaviour:
   powerupPrefabs:
   - {fileID: 5527529143397485542, guid: d62e50c87a49a174d8b15ef025a14b8f, type: 3}
   spawnChance: 20
---- !u!114 &5132640303990751288
+--- !u!114 &-3677907828239484016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

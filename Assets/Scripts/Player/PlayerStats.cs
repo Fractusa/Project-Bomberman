@@ -1,12 +1,13 @@
 using Mirror;
 using UnityEngine;
 
-public enum PlayerTeam { Red, Green, Blue, Yellow}
+
+public enum PlayerTeam { Red, Green, Blue, Yellow, Purple, Orange}
 
 public class PlayerStats : NetworkBehaviour
 {
     public PlayerTeam myTeam;
-    public MeshRenderer playerRenderer; //put the players 3d model here, to allow it to be rendered in it's teams color
+    public PlayerColorChoice colorChoice = PlayerColorChoice.Red;
 
     void Start()
     {
@@ -53,19 +54,17 @@ public class PlayerStats : NetworkBehaviour
 
     void ApplyTeamColor()
     {
-        if (playerRenderer == null) return;
+        colorChoice = GetComponent<PlayerColor>().colorChoice;
 
         //Change color on the player models material based on their team color
-        switch (myTeam)
+        switch (colorChoice)
         {
-            case PlayerTeam.Red:
-                playerRenderer.material.color = Color.red; break;
-            case PlayerTeam.Green:
-                playerRenderer.material.color = Color.green; break;
-            case PlayerTeam.Blue:
-                playerRenderer.material.color = Color.blue; break;
-            case PlayerTeam.Yellow:
-                playerRenderer.material.color = Color.yellow; break;
+            case PlayerColorChoice.Red: myTeam = PlayerTeam.Red; break;
+            case PlayerColorChoice.Green: myTeam = PlayerTeam.Green; break;
+            case PlayerColorChoice.Blue: myTeam = PlayerTeam.Blue; break;
+            case PlayerColorChoice.Yellow: myTeam = PlayerTeam.Yellow; break;
+            case PlayerColorChoice.Purple: myTeam = PlayerTeam.Purple; break;
+            case PlayerColorChoice.Orange: myTeam = PlayerTeam.Orange; break;
         }
     }
 }

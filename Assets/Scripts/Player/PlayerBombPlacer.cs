@@ -63,9 +63,9 @@ public class PlayerBombPlacer : NetworkBehaviour
     private Vector3 GetBombSpawnPosition()
     {
         Vector3 spawnPos = new Vector3(
-                Mathf.Round(transform.position.x),
+                transform.position.x,
                 -0.5f,
-                Mathf.Round(transform.position.z)
+                transform.position.z
         );
 
         return spawnPos;

@@ -1,6 +1,6 @@
 using UnityEngine;
 using Mirror;
-public class Bomb : MonoBehaviour
+public class Bomb : NetworkBehaviour
 {
     private int bombRange;
     private PlayerStats owner;
@@ -12,21 +12,21 @@ public class Bomb : MonoBehaviour
     {
         bombRange = range;
         owner = creator;
-
         Invoke("Explode", fuseTime);
 
     }
 
 
+    [Server]
     void Explode()
     {
+        RpcSpawnVisualExplosions();
+        
 
-        Instantiate(explosionPrefab, transform.position, Quaternion.Euler(90, 0, 0));
-
-        SpawnExplosionDirection(Vector3.forward);
-        SpawnExplosionDirection(Vector3.back);
-        SpawnExplosionDirection(Vector3.left);
-        SpawnExplosionDirection(Vector3.right);
+        CheckExplosionDirection(Vector3.forward);
+        CheckExplosionDirection(Vector3.back);
+        CheckExplosionDirection(Vector3.left);
+        CheckExplosionDirection(Vector3.right);
 
 
         if (owner != null) owner.activeBombs--;
@@ -34,8 +34,19 @@ public class Bomb : MonoBehaviour
         Destroy(gameObject);
     }
 
+    [ClientRpc]
+    void RpcSpawnVisualExplosions()
+    {
+        Instantiate(explosionPrefab, transform.position, Quaternion.Euler(90, 0, 0));
 
-    void SpawnExplosionDirection(Vector3 direction)
+
+        SpawnVisualDirection(Vector3.forward);
+        SpawnVisualDirection(Vector3.back);
+        SpawnVisualDirection(Vector3.left);
+        SpawnVisualDirection(Vector3.right);
+    }
+
+    void SpawnVisualDirection(Vector3 direction)
     {
         for (int i = 1; i <= bombRange; i++)
         {
@@ -52,17 +63,32 @@ public class Bomb : MonoBehaviour
             }
             else
             {
-                //If a box is his explode the box
-                if (hit.collider.CompareTag("Box"))
-                {
-                    if (NetworkServer.active)
-                    {
-                        hit.collider.GetComponent<DestroyableBox>()?.Explode();
-                    }
-                }
-                //Stop the explosion from continuing through the box
                 break;
             }
-        }  
+        }
+    }
+
+    void CheckExplosionDirection(Vector3 direction)
+    {
+        for (int i = 1; i <= bombRange; i++)
+        {
+                RaycastHit hit;
+
+                //Makes the SphereCast radius 0.3f, to easier hit targets. 
+                if (Physics.SphereCast(transform.position, 0.3f, direction, out hit, i, levelLayerMask))
+                {
+                    //If a box is his explode the box
+                    if (hit.collider.CompareTag("Box"))
+                    {
+                        if (NetworkServer.active)
+                        {
+                            hit.collider.GetComponent<DestroyableBox>()?.Explode();
+                        }
+                    }
+
+                    break;
+                }
+            
+        }
     }
 }

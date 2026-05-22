@@ -82,10 +82,16 @@ public class PlayerHealth : NetworkBehaviour
     [ClientRpc]
     void RpcOnReset(Vector3 spawnPosition)
     {
+
+        CharacterController cc = GetComponent<CharacterController>();
+        
+        if(cc != null) cc.enabled = false;
+
         transform.position = spawnPosition;
         if(playerStats != null) playerStats.enabled = true;
 
         //enable key player components, to enable moving/hitboxes again
+        if (cc != null) cc.enabled = true;
         if (GetComponent<Collider>()) GetComponent<Collider>().enabled = true;
         if (GetComponent<CharacterController>()) GetComponent<CharacterController>().enabled = true;
         if (GetComponent<Player>()) GetComponent<Player>().enabled = true;

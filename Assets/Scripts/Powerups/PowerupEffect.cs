@@ -1,7 +1,7 @@
 using UnityEngine;
 using Mirror;
 
-public class Powerup : ScriptableObject
+public class PowerupEffect : ScriptableObject
 {
     public int maxBombs = 0;
     public int extraRange = 0;

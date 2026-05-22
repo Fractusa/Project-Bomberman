@@ -14,9 +14,6 @@ public class PlayerBombPlacer : NetworkBehaviour
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private KeyCode placeBombKey = KeyCode.Space;
 
-    //Syncs the active bombs between the server and clients
-    [SyncVar] private int activeBombs;
-
     private PlayerStats stats;
 
     private void Awake()
@@ -38,24 +35,27 @@ public class PlayerBombPlacer : NetworkBehaviour
     //Method for clients to call to attempt to place a bomb in game
     [Command]
     private void CmdPlaceBomb()
-    {
-        Vector3 spawnPos = GetBombSpawnPosition();
-
-        if(!CanPlaceBombAt(spawnPos))
-            return;
-
-        GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
-
-        Bomb bomb = newBomb.GetComponent<Bomb>();
-
-        if(bomb != null)
+    {   
+        if(stats.activeBombs < stats.maxBombs)
         {
-            bomb.Setup(stats.bombRange, this);
+            Vector3 spawnPos = GetBombSpawnPosition();
+
+            if(!CanPlaceBombAt(spawnPos))
+                return;
+
+            GameObject newBomb = Instantiate(bombPrefab, spawnPos, Quaternion.identity);
+
+            Bomb bomb = newBomb.GetComponent<Bomb>();
+
+            if(bomb != null)
+            {
+                bomb.Setup(stats.bombRange, this);
+            }
+
+            stats.RegisterBombPlaced();
+
+            NetworkServer.Spawn(newBomb);
         }
-
-        stats.RegisterBombPlaced();
-
-        NetworkServer.Spawn(newBomb);
     }
 
     //Server method for getting bomb spawn position

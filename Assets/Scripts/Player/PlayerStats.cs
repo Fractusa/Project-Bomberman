@@ -20,12 +20,12 @@ public class PlayerStats : NetworkBehaviour
     [SyncVar] public int playerLives = 3;
 
     [Server]
-    public void AddPowerup(Powerup effect)
+    public void AddPowerup(PowerupEffect effect)
     {
         bombRange += effect.extraRange;
         maxBombs += effect.maxBombs;
         moveSpeed += effect.moveSpeed;
-
+        
         Debug.Log($"Powerup picked up! stats: Range: {bombRange}, Max bombs: {maxBombs}, Movement speed: {moveSpeed}");
     }
     

@@ -8,6 +8,8 @@ public class Player : NetworkBehaviour
     public InputAction moveAction;
     private CharacterController controller;
 
+    [SerializeField] private KeyCode restartKey = KeyCode.R;
+
     public override void OnStartLocalPlayer()
     {
         // Camera.main.transform.SetParent(transform);
@@ -28,5 +30,24 @@ public class Player : NetworkBehaviour
 
         Vector3 move = new Vector3(moveValue.x, 0, moveValue.y);
         controller.Move(move * moveSpeed * Time.deltaTime);
+
+        if (Input.GetKeyDown(restartKey))
+        {
+            CmdRestartRound();
+        }
+    }
+
+    [Command]
+    private void CmdRestartRound()
+    {
+        RoomManager roomManager = NetworkManager.singleton as RoomManager;
+
+        if (roomManager == null)
+        {
+            Debug.LogError("NetworkManager singleton is not RoomManager.");
+            return;
+        }
+
+        roomManager.RestartGameplayScene();
     }
 }

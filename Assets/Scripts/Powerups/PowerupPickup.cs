@@ -1,13 +1,14 @@
-using UnityEngine;
 using Mirror;
+using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PowerupPickup : NetworkBehaviour
 {
     public PowerupEffect effectData;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!NetworkServer.active) return;
+        if (!isServer)
+            return;
 
         // Check if it is a player who collided with the prefab
         if (other.CompareTag("Player"))

@@ -1,94 +1,90 @@
 using UnityEngine;
 using Mirror;
+using System.Collections;
+
 public class Bomb : NetworkBehaviour
 {
-    private int bombRange;
-    private PlayerStats owner;
     public float fuseTime = 3f;
     public GameObject explosionPrefab;
     public LayerMask levelLayerMask;
+    private int bombRange;
+    private PlayerBombPlacer creator;
 
-    public void Setup(int range, PlayerStats creator)
+    public void Setup(int range, PlayerBombPlacer bombCreator)
     {
         bombRange = range;
-        owner = creator;
-        Invoke("Explode", fuseTime);
-
+        creator = bombCreator;
     }
 
+    public override void OnStartServer()
+    {
+        base.OnStartServer();
+
+        StartCoroutine(FuseRoutine());
+    }
+
+    [Server]
+    private IEnumerator FuseRoutine()
+    {
+        yield return new WaitForSeconds(fuseTime);
+
+        Explode();
+    }
 
     [Server]
     void Explode()
     {
-        RpcSpawnVisualExplosions();
-        
+        GameObject explosionObject = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        NetworkServer.Spawn(explosionObject);
 
-        CheckExplosionDirection(Vector3.forward);
-        CheckExplosionDirection(Vector3.back);
-        CheckExplosionDirection(Vector3.left);
-        CheckExplosionDirection(Vector3.right);
+        SpawnExplosionDirection(Vector3.forward);
+        SpawnExplosionDirection(Vector3.back);
+        SpawnExplosionDirection(Vector3.left);
+        SpawnExplosionDirection(Vector3.right);
 
+        if (creator != null) 
+            creator.OnBombExploded();
 
-        if (owner != null) owner.activeBombs--;
-
-        Destroy(gameObject);
+        NetworkServer.Destroy(gameObject);
     }
 
-    [ClientRpc]
-    void RpcSpawnVisualExplosions()
-    {
-        Instantiate(explosionPrefab, transform.position, Quaternion.Euler(90, 0, 0));
-
-
-        SpawnVisualDirection(Vector3.forward);
-        SpawnVisualDirection(Vector3.back);
-        SpawnVisualDirection(Vector3.left);
-        SpawnVisualDirection(Vector3.right);
-    }
-
-    void SpawnVisualDirection(Vector3 direction)
+    [Server]
+    private void SpawnExplosionDirection(Vector3 direction)
     {
         for (int i = 1; i <= bombRange; i++)
         {
             Vector3 spawnPos = transform.position + direction * i;
-            RaycastHit hit;
 
             //Check if a wall or box is hit before creating the explosion
             Quaternion rotation = Quaternion.LookRotation(direction) * Quaternion.Euler(90, 0, 0);
 
-            //Makes the SphereCast radius 0.3f, to easier hit targets. 
-            if (!Physics.SphereCast(transform.position, 0.3f, direction, out hit, i, levelLayerMask))
+            bool hasHit = Physics.SphereCast(transform.position, 0.3f, direction, out RaycastHit hit, i, levelLayerMask);
+
+            if(hasHit)
             {
-                Instantiate(explosionPrefab, spawnPos, rotation);
+                if(hit.collider.CompareTag("Box"))
+                {
+                    DestroyableBox box = hit.collider.GetComponent<DestroyableBox>();
+                    box.Explode();
+                    
+                    SpawnExplosion(spawnPos, rotation);
+                    break;
+                }
+
+                if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+                {
+                    break;
+                }
             }
-            else
-            {
-                break;
-            }
+            
+            SpawnExplosion(spawnPos, rotation);
         }
     }
 
-    void CheckExplosionDirection(Vector3 direction)
+    [Server]
+    private void SpawnExplosion(Vector3 position, Quaternion rotation)
     {
-        for (int i = 1; i <= bombRange; i++)
-        {
-                RaycastHit hit;
-
-                //Makes the SphereCast radius 0.3f, to easier hit targets. 
-                if (Physics.SphereCast(transform.position, 0.3f, direction, out hit, i, levelLayerMask))
-                {
-                    //If a box is his explode the box
-                    if (hit.collider.CompareTag("Box"))
-                    {
-                        if (NetworkServer.active)
-                        {
-                            hit.collider.GetComponent<DestroyableBox>()?.Explode();
-                        }
-                    }
-
-                    break;
-                }
-            
-        }
+        GameObject explosionObject = Instantiate(explosionPrefab, position, rotation);
+        NetworkServer.Spawn(explosionObject);
     }
 }

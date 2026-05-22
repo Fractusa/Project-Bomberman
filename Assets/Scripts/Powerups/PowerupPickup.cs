@@ -1,8 +1,9 @@
+using Mirror;
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class NewMonoBehaviourScript : NetworkBehaviour
 {
-    public PowerupEffect effectData;
+    public Powerup effectData;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +19,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 stats.AddPowerup(effectData);
 
                 //Delete powerup prefab
-                Destroy(gameObject);
+                NetworkServer.Destroy(gameObject);
             }
         }
     }

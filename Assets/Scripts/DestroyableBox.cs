@@ -1,9 +1,12 @@
 using UnityEngine;
+using Mirror;
 
-public class DestroyableBox : MonoBehaviour
+public class DestroyableBox : NetworkBehaviour
 {
     public GameObject[] powerupPrefabs; //List of possible powerups to drop
     [Range(0, 100)] public float spawnChance = 20f;
+
+    [Server]
     public void Explode()//Called when the box is hit by an explosion
     {
         float roll = Random.Range(0, 100f);//Roll a number between 0 and 100
@@ -12,9 +15,11 @@ public class DestroyableBox : MonoBehaviour
         {
             //Randomly decide which powerup to drop
             int randomIndex = Random.Range(0, powerupPrefabs.Length);
-            Instantiate(powerupPrefabs[randomIndex], transform.position, Quaternion.identity);
+            GameObject powerupObject = Instantiate(powerupPrefabs[randomIndex], transform.position, Quaternion.identity);
+
+            NetworkServer.Spawn(powerupObject);
         }
 
-        Destroy(gameObject);//Destroy box
+        NetworkServer.Destroy(gameObject);//Destroy box
     }
 }

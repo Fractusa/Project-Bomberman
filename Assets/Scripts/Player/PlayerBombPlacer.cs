@@ -13,11 +13,16 @@ public class PlayerBombPlacer : NetworkBehaviour
     [Header("Bomb settings")]
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private KeyCode placeBombKey = KeyCode.Space;
-    [SerializeField] private int maxBombs = 1;
-    [SerializeField] private int bombRange = 3;
 
     //Syncs the active bombs between the server and clients
     [SyncVar] private int activeBombs;
+
+    private PlayerStats stats;
+
+    private void Awake()
+    {
+        stats = GetComponent<PlayerStats>();
+    }
 
     private void Update()
     {
@@ -34,9 +39,6 @@ public class PlayerBombPlacer : NetworkBehaviour
     [Command]
     private void CmdPlaceBomb()
     {
-        if(activeBombs >= maxBombs)
-            return;
-        
         Vector3 spawnPos = GetBombSpawnPosition();
 
         if(!CanPlaceBombAt(spawnPos))
@@ -48,10 +50,10 @@ public class PlayerBombPlacer : NetworkBehaviour
 
         if(bomb != null)
         {
-            bomb.Setup(bombRange, this);
+            bomb.Setup(stats.bombRange, this);
         }
 
-        activeBombs++;
+        stats.RegisterBombPlaced();
 
         NetworkServer.Spawn(newBomb);
     }
@@ -88,6 +90,6 @@ public class PlayerBombPlacer : NetworkBehaviour
     [Server]
     public void OnBombExploded()
     {
-        activeBombs = Mathf.Max(0, activeBombs - 1);
+        stats.RegisterBombRemoved();
     }
 }

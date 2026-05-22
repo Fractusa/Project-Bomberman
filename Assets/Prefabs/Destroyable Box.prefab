@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5269717115826503899}
   - component: {fileID: 8864489054041926712}
   - component: {fileID: 6537260529180406788}
+  - component: {fileID: 5132640303990751288}
   m_Layer: 6
   m_Name: Destroyable Box
   m_TagString: Box
@@ -125,6 +126,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e26dff35bd726447a8ffd09ba540a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyableBox
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   powerupPrefabs:
   - {fileID: 5527529143397485542, guid: d62e50c87a49a174d8b15ef025a14b8f, type: 3}
   spawnChance: 20
+--- !u!114 &5132640303990751288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9045914187481768892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
+  sceneId: 0
+  _assetId: 2340978936
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0

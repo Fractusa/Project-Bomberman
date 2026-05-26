@@ -29,12 +29,12 @@ public class GameManager : NetworkBehaviour
     [SyncVar(hook = nameof(OnOrangeScoreChanged))] public int scoreOrange = 0;
     [SyncVar(hook = nameof(OnPurpleScoreChanged))] public int scorePurple = 0;
 
-    void OnRedScoreChanged(int oldScore, int newScore) { if (txtRedScore != null) txtRedScore.text = $"Red: {newScore}"; }
-    void OnBlueScoreChanged(int oldScore, int newScore) { if (txtBlueScore != null) txtBlueScore.text = $"Blue: {newScore}"; }
-    void OnGreenScoreChanged(int oldScore, int newScore) { if (txtGreenScore != null) txtGreenScore.text = $"Green: {newScore}"; }
-    void OnYellowScoreChanged(int oldScore, int newScore) { if (txtYellowScore != null) txtYellowScore.text = $"Yellow: {newScore}"; }
-    void OnOrangeScoreChanged(int oldScore, int newScore) { if (txtOrangeScore != null) txtOrangeScore.text = $"Orange: {newScore}"; }
-    void OnPurpleScoreChanged(int oldScore, int newScore) { if (txtPurpleScore != null) txtPurpleScore.text = $"Purple: {newScore}"; }
+    void OnRedScoreChanged(int oldScore, int newScore) { if (txtRedScore != null) txtRedScore.text = $"Red Team: {newScore}"; }
+    void OnBlueScoreChanged(int oldScore, int newScore) { if (txtBlueScore != null) txtBlueScore.text = $"Blue Team: {newScore}"; }
+    void OnGreenScoreChanged(int oldScore, int newScore) { if (txtGreenScore != null) txtGreenScore.text = $"Green Team: {newScore}"; }
+    void OnYellowScoreChanged(int oldScore, int newScore) { if (txtYellowScore != null) txtYellowScore.text = $"Yellow Team: {newScore}"; }
+    void OnOrangeScoreChanged(int oldScore, int newScore) { if (txtOrangeScore != null) txtOrangeScore.text = $"Orange Team: {newScore}"; }
+    void OnPurpleScoreChanged(int oldScore, int newScore) { if (txtPurpleScore != null) txtPurpleScore.text = $"Purple Team: {newScore}"; }
 
     [Server]
     public void CheckRemainingPlayers()

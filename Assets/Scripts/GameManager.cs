@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : NetworkBehaviour
 {
@@ -13,13 +13,28 @@ public class GameManager : NetworkBehaviour
     public int playersLeftToWin = 1;
     private bool isRoundEnding = false;
 
-    [SyncVar] public int scoreRed = 0;
-    [SyncVar] public int scoreBlue = 0;
-    [SyncVar] public int scoreGreen = 0;
-    [SyncVar] public int scoreYellow = 0;
-    [SyncVar] public int scoreOrange = 0;
-    [SyncVar] public int scorePurple = 0;
+    public TextMeshProUGUI winnerText;
+    public TextMeshProUGUI txtRedScore;
+    public TextMeshProUGUI txtBlueScore;
+    public TextMeshProUGUI txtGreenScore;
+    public TextMeshProUGUI txtYellowScore;
+    public TextMeshProUGUI txtOrangeScore;
+    public TextMeshProUGUI txtPurpleScore;
 
+    //Adding hooks that automatically calls the method on the client once the value is changed on the server, updating the clients score UI to match the server
+    [SyncVar(hook = nameof(OnRedScoreChanged))] public int scoreRed = 0;
+    [SyncVar(hook = nameof(OnBlueScoreChanged))] public int scoreBlue = 0;
+    [SyncVar(hook = nameof(OnGreenScoreChanged))] public int scoreGreen = 0;
+    [SyncVar(hook = nameof(OnYellowScoreChanged))] public int scoreYellow = 0;
+    [SyncVar(hook = nameof(OnOrangeScoreChanged))] public int scoreOrange = 0;
+    [SyncVar(hook = nameof(OnPurpleScoreChanged))] public int scorePurple = 0;
+
+    void OnRedScoreChanged(int oldScore, int newScore) { if (txtRedScore != null) txtRedScore.text = $"Red Team: {newScore}"; }
+    void OnBlueScoreChanged(int oldScore, int newScore) { if (txtBlueScore != null) txtBlueScore.text = $"Blue Team: {newScore}"; }
+    void OnGreenScoreChanged(int oldScore, int newScore) { if (txtGreenScore != null) txtGreenScore.text = $"Green Team: {newScore}"; }
+    void OnYellowScoreChanged(int oldScore, int newScore) { if (txtYellowScore != null) txtYellowScore.text = $"Yellow Team: {newScore}"; }
+    void OnOrangeScoreChanged(int oldScore, int newScore) { if (txtOrangeScore != null) txtOrangeScore.text = $"Orange Team: {newScore}"; }
+    void OnPurpleScoreChanged(int oldScore, int newScore) { if (txtPurpleScore != null) txtPurpleScore.text = $"Purple Team: {newScore}"; }
 
     [Server]
     public void CheckRemainingPlayers()
@@ -62,11 +77,9 @@ public class GameManager : NetworkBehaviour
     void EndRoundDraw()
     {
         Debug.Log($"Round has ended as a draw! Everyone died!");
-        if (scoreBlue == 3) EndMatch(PlayerTeam.Blue); // Temporary testing, when testing is done remove everything but StartCoroutine(RestartSceneRoutine()); from this method.
-        else
-        {
-            StartCoroutine(RestartSceneRoutine());
-        }
+
+        RpcShowWinnerText("Round Draw", Color.white);
+        StartCoroutine(RestartSceneRoutine());
 
     }
 
@@ -76,17 +89,21 @@ public class GameManager : NetworkBehaviour
     void EndRound(PlayerTeam winningTeam)
     {
         int currentWinnerScore = 0;
+        Color teamColor = Color.white;
+        string teamName = "";
 
         switch (winningTeam)
         {
-            case PlayerTeam.Red: scoreRed++; currentWinnerScore = scoreRed; break;
-            case PlayerTeam.Blue: scoreBlue++; currentWinnerScore = scoreBlue; break;
-            case PlayerTeam.Green: scoreGreen++; currentWinnerScore = scoreGreen; break;
-            case PlayerTeam.Yellow: scoreYellow++; currentWinnerScore = scoreYellow; break;
-            case PlayerTeam.Orange: scoreOrange++; currentWinnerScore = scoreOrange; break;
-            case PlayerTeam.Purple: scorePurple++; currentWinnerScore = scorePurple; break;
+            case PlayerTeam.Red: scoreRed++; currentWinnerScore = scoreRed; teamColor = Color.red; teamName = "Red"; break;
+            case PlayerTeam.Blue: scoreBlue++; currentWinnerScore = scoreBlue; teamColor = Color.blue; teamName = "Blue"; break;
+            case PlayerTeam.Green: scoreGreen++; currentWinnerScore = scoreGreen; teamColor = Color.green; teamName = "Green"; break;
+            case PlayerTeam.Yellow: scoreYellow++; currentWinnerScore = scoreYellow; teamColor = Color.yellow; teamName = "Yellow"; break;
+            case PlayerTeam.Orange: scoreOrange++; currentWinnerScore = scoreOrange; teamColor = Color.orange; teamName = "Orange"; break;
+            case PlayerTeam.Purple: scorePurple++; currentWinnerScore = scorePurple; teamColor = Color.purple; teamName = "Purple"; break;
 
         }
+
+        RpcShowWinnerText($"{teamName} Team Won the round", teamColor);
         Debug.Log($"Round has ended! {winningTeam} won! Their score is {currentWinnerScore}");
 
 
@@ -106,6 +123,7 @@ public class GameManager : NetworkBehaviour
         Debug.Log($"Restarting the round in {restartSceneDelay}");
         yield return new WaitForSeconds(restartSceneDelay);
 
+        RpcHideWinnerText();
 
         //Once round ends remove all bombs, explosions and powerups
         foreach (GameObject bomb in GameObject.FindGameObjectsWithTag("Bomb")) Destroy(bomb);
@@ -145,6 +163,19 @@ public class GameManager : NetworkBehaviour
         }
     }
 
+    [ClientRpc]
+    void RpcShowWinnerText(string textToDisplay, Color colorToUse)
+    {
+        winnerText.text = textToDisplay;
+        winnerText.color = colorToUse;
+        winnerText.gameObject.SetActive(true);
+    }
+
+    [ClientRpc]
+    void RpcHideWinnerText()
+    {
+        winnerText.gameObject.SetActive(false);
+    }
 
     private void ResetAllScores()
     {

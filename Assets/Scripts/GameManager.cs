@@ -177,7 +177,7 @@ public class GameManager : NetworkBehaviour
         winnerText.gameObject.SetActive(false);
     }
 
-    private void ResetAllScores()
+    public void ResetAllScores()
     {
         scoreRed = 0;
         scoreBlue = 0;

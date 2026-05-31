@@ -8,7 +8,7 @@ public class RoomPlayer : NetworkRoomPlayer
 {
     [SyncVar(hook = nameof(OnColorChoiceChanged))]
     public PlayerColorChoice colorChoice = PlayerColorChoice.Red;
-    [SerializeField] private Renderer renderer;
+    [SerializeField] private Renderer lobbyRenderer;
 
     public override void OnStartClient()
     {
@@ -33,11 +33,11 @@ public class RoomPlayer : NetworkRoomPlayer
 
     private void ApplyLobbyPreviewColor(PlayerColorChoice choice)
     {
-        if (renderer == null)
-            renderer = GetComponentInChildren<Renderer>();
+        if (lobbyRenderer == null)
+            lobbyRenderer = GetComponentInChildren<Renderer>();
 
-        if (renderer != null)
-            renderer.material.color = PlayerColorUtility.ToColor(choice);
+        if (lobbyRenderer != null)
+            lobbyRenderer.material.color = PlayerColorUtility.ToColor(choice);
     }
 
     public override void OnGUI()

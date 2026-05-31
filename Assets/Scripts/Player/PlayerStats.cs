@@ -23,10 +23,15 @@ public class PlayerStats : NetworkBehaviour
     [Server]
     public void AddPowerup(PowerupEffect effect)
     {
+        ApplyPowerupLogic(effect);
+    }
+
+    public void ApplyPowerupLogic(PowerupEffect effect)
+    {
         bombRange += effect.extraRange;
         maxBombs += effect.maxBombs;
         moveSpeed += effect.moveSpeed;
-        
+
         Debug.Log($"Powerup picked up! stats: Range: {bombRange}, Max bombs: {maxBombs}, Movement speed: {moveSpeed}");
     }
     

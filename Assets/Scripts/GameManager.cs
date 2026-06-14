@@ -9,10 +9,14 @@ public class GameManager : NetworkBehaviour
 {
     public float roundEndDelay = 2.0f;
     public float restartSceneDelay = 5.0f;
+    public float roundDuration = 120f;
 
     public int playersLeftToWin = 1;
     private bool isRoundEnding = false;
 
+
+
+    public TextMeshProUGUI roundTimer;
     public TextMeshProUGUI winnerText;
     public TextMeshProUGUI txtRedScore;
     public TextMeshProUGUI txtBlueScore;
@@ -29,12 +33,26 @@ public class GameManager : NetworkBehaviour
     [SyncVar(hook = nameof(OnOrangeScoreChanged))] public int scoreOrange = 0;
     [SyncVar(hook = nameof(OnPurpleScoreChanged))] public int scorePurple = 0;
 
+    [SyncVar(hook = nameof(OnTimerChanged))] private int currentRoundTime = 0;
+
+    private Coroutine roundTimerCoroutine;
+
     void OnRedScoreChanged(int oldScore, int newScore) { if (txtRedScore != null) txtRedScore.text = $"Red Team: {newScore}"; }
     void OnBlueScoreChanged(int oldScore, int newScore) { if (txtBlueScore != null) txtBlueScore.text = $"Blue Team: {newScore}"; }
     void OnGreenScoreChanged(int oldScore, int newScore) { if (txtGreenScore != null) txtGreenScore.text = $"Green Team: {newScore}"; }
     void OnYellowScoreChanged(int oldScore, int newScore) { if (txtYellowScore != null) txtYellowScore.text = $"Yellow Team: {newScore}"; }
     void OnOrangeScoreChanged(int oldScore, int newScore) { if (txtOrangeScore != null) txtOrangeScore.text = $"Orange Team: {newScore}"; }
     void OnPurpleScoreChanged(int oldScore, int newScore) { if (txtPurpleScore != null) txtPurpleScore.text = $"Purple Team: {newScore}"; }
+
+    void OnTimerChanged(int oldTime, int newTime)
+    {
+        if(roundTimer != null)
+        {
+            int minutes = newTime / 60;
+            int seconds = newTime % 60;
+            roundTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
+    }
 
     [Server]
     public void CheckRemainingPlayers()
@@ -43,6 +61,38 @@ public class GameManager : NetworkBehaviour
         StartCoroutine(DelayedCheckRoutine());
     }
 
+    [Server]
+    private void StartRoundTimer()
+    {
+        if (roundTimerCoroutine != null) StopCoroutine(roundTimerCoroutine);
+
+        currentRoundTime = Mathf.CeilToInt(roundDuration);
+        roundTimerCoroutine = StartCoroutine(RoundTimerCoroutine());
+    }
+
+    public override void OnStartServer()
+    {
+        base.OnStartServer();
+        StartRoundTimer();
+    }
+
+    [Server]
+    private IEnumerator RoundTimerCoroutine()
+    {
+        while (currentRoundTime > 0 && !isRoundEnding)
+        {
+            yield return new WaitForSeconds(1f);
+            
+            if (isRoundEnding) yield break;
+
+            currentRoundTime--;
+        }
+
+        if(currentRoundTime <= 0 && !isRoundEnding)
+        {
+            EndRoundDraw();
+        }
+    }
     private IEnumerator DelayedCheckRoutine()
     {
         isRoundEnding = true;
@@ -76,6 +126,7 @@ public class GameManager : NetworkBehaviour
 
     void EndRoundDraw()
     {
+        isRoundEnding = true;
         Debug.Log($"Round has ended as a draw! Everyone died!");
 
         RpcShowWinnerText("Round Draw", Color.white);
@@ -148,6 +199,7 @@ public class GameManager : NetworkBehaviour
         }
 
         isRoundEnding = false;
+        StartRoundTimer();
     }
 
     void EndMatch(PlayerTeam matchWinner)

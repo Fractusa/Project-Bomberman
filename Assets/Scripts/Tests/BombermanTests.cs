@@ -11,7 +11,6 @@ public class BombermanTests
 
 
     //CASE 1: Testing whether powerups correctly provide the powerup to the player character.
-
     [Test]
     public void PlayerStats_PickingUpRangePowerup_IncreasesBombRange()
     {
@@ -27,7 +26,6 @@ public class BombermanTests
         rangeEffect.extraRange = 1;
         rangeEffect.maxBombs = 0;
         rangeEffect.moveSpeed = 0;
-
 
         //ACT
         stats.ApplyPowerupLogic(rangeEffect);

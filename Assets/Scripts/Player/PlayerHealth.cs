@@ -158,6 +158,7 @@ public class PlayerHealth : NetworkBehaviour
         if (isLocalPlayer)
         {
             UpdateHeartUI(lives);
+            playerStats.UpdateBombUI();
         }
     }
 }

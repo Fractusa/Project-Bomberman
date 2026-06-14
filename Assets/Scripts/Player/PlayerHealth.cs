@@ -1,9 +1,16 @@
 using Mirror;
+using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : NetworkBehaviour
 {
+
+    public List<GameObject> uiHearts;
+
+
+    [SyncVar(hook = nameof(OnLivesChanged))]
     public int lives = 3;
     public float invulnerabilityDuration = 1f;
     private bool isInvulnerable;
@@ -15,6 +22,48 @@ public class PlayerHealth : NetworkBehaviour
     {
         playerStats = GetComponent<PlayerStats>();
     }
+
+    public override void OnStartLocalPlayer()
+    {
+        base.OnStartLocalPlayer();
+
+        GameObject container = GameObject.Find("HeartContainer");
+        if(container != null)
+        {
+            uiHearts = new List<GameObject>();
+            foreach (Transform child in container.transform)
+            {
+                uiHearts.Add(child.gameObject);
+            }
+        }
+
+        UpdateHeartUI(lives);
+    }
+
+    void OnLivesChanged(int oldLives, int newLives)
+    {
+        if (!isLocalPlayer) return;
+
+        UpdateHeartUI(newLives);
+    }
+
+    private void UpdateHeartUI(int currentLives)
+    {
+        if (uiHearts == null || uiHearts.Count == 0) return;
+
+        for ( int i = 0; i < uiHearts.Count; i++)
+        {
+            if(i < currentLives)
+            {
+                uiHearts[i].SetActive(true);
+            }
+            else
+            {
+                uiHearts[i].SetActive(false);
+            }
+        }
+    }
+
     public void TakeDamage()
     {
         if (!isServer) return;
@@ -104,6 +153,11 @@ public class PlayerHealth : NetworkBehaviour
             playerStats.activeBombs = 0;
             playerStats.maxBombs = 1;
             playerStats.bombRange = 2;
+        }
+
+        if (isLocalPlayer)
+        {
+            UpdateHeartUI(lives);
         }
     }
 }
